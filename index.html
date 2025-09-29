@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cozy Spoon - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">The Cozy Spoon</h1>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero" id="hero">
+            <div class="hero-content">
+                <h2>Welcome to The Cozy Spoon</h2>
+                <p>Experience exquisite dining in a warm, inviting atmosphere.</p>
+                <a href="#menu" class="btn">View Our Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h3>Our Story</h3>
+            <p>The Cozy Spoon started with a simple dream: to create a place where food brings people together. Our chefs craft dishes from fresh, local ingredients, ensuring every bite is a delightful journey. We believe in good food, good company, and great memories.</p>
+             <p>Our commitment to quality extends from our kitchen to your table. We source organic vegetables, sustainably raised meats, and fresh-caught seafood daily to ensure the highest standards for our guests.</p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h3>Our Delicious Menu</h3>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h4>Grilled Salmon with Asparagus</h4>
+                    <p>Perfectly grilled salmon fillet served with fresh, tender asparagus and a lemon-dill sauce.</p>
+                    <span class="price">$24.99</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Classic Beef Burger</h4>
+                    <p>Juicy beef patty, cheddar cheese, fresh lettuce, tomato, onion, and our special sauce, served with fries.</p>
+                    <span class="price">$16.50</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Vegetarian Lasagna</h4>
+                    <p>Layers of fresh pasta, rich tomato sauce, ricotta, mozzarella, and seasonal vegetables, baked to perfection.</p>
+                    <span class="price">$18.75</span>
+                </div>
+                 <div class="menu-item">
+                    <h4>Spicy Shrimp Tacos</h4>
+                    <p>Grilled shrimp marinated in a zesty sauce, fresh slaw, avocado cream, and pico de gallo in warm tortillas.</p>
+                    <span class="price">$19.25</span>
+                </div>
+                 <div class="menu-item">
+                    <h4>Chocolate Lava Cake</h4>
+                    <p>Warm chocolate cake with a molten center, served with a scoop of vanilla bean ice cream.</p>
+                    <span class="price">$8.00</span>
+                </div>
+                 <div class="menu-item">
+                    <h4>Artisan Cheese Platter</h4>
+                    <p>A selection of fine cheeses, seasonal fruits, nuts, and crackers, perfect for sharing.</p>
+                    <span class="price">$22.00</span>
+                </div>
+            </div>
+            <button class="btn view-full-menu" onclick="alert('Imagine a full PDF menu popping up here!')">View Full Menu (PDF)</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Visit Us or Make a Reservation</h3>
+            <p><strong>Address:</strong> 123 Main Street, Cityville, State 12345</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> info@thecozyspoon.com</p>
+            <p><strong>Hours:</strong> Mon-Sat: 11 AM - 10 PM | Sunday: 12 PM - 9 PM</p>
+            <form class="reservation-form">
+                <h4>Reservation Request</h4>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="date" required>
+                <input type="time" required>
+                <input type="number" placeholder="Number of Guests" min="1" required>
+                <textarea placeholder="Special Requests (optional)"></textarea>
+                <button type="submit" class="btn">Submit Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 The Cozy Spoon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
