@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
@@ -21,19 +21,21 @@ body {
 
 /* Typography */
 h1, h2, h3, h4 {
-    font-family: 'Playfair Display', serif;
-    color: #444;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #222;
     margin-bottom: 15px;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
     color: #fff;
+    letter-spacing: 2px;
 }
 
 h3 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     text-align: center;
     margin-bottom: 30px;
     position: relative;
@@ -45,35 +47,32 @@ h3::after {
     left: 50%;
     bottom: -10px;
     transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: #d4af37; /* Gold accent */
-    border-radius: 5px;
+    width: 70px;
+    height: 4px;
+    background-color: #ff8c00; /* Burger Orange */
 }
 
 p {
     margin-bottom: 15px;
     text-align: center;
+    color: #555;
 }
 
 /* Header & Navigation */
 header {
-    background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1952&q=80') no-repeat center center/cover;
     height: 100vh;
     color: #fff;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 nav {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    border-bottom: 3px solid #ff8c00;
 }
 
 nav .container {
@@ -84,8 +83,8 @@ nav .container {
 
 nav .logo {
     margin: 0;
-    font-size: 1.8em;
-    color: #d4af37; /* Gold accent */
+    font-size: 2em;
+    color: #ff8c00; /* Burger Orange */
 }
 
 nav ul {
@@ -94,71 +93,68 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     transition: color 0.3s ease;
+    text-transform: uppercase;
 }
 
 nav ul li a:hover {
-    color: #d4af37; /* Gold accent */
+    color: #ff8c00; /* Burger Orange */
 }
 
 /* Hero Section */
 .hero {
-    flex-grow: 1; /* Allows it to take remaining vertical space */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: 100%;
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 40px 60px;
-    border-radius: 10px;
     max-width: 800px;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 30px;
     color: #eee;
+    font-weight: 400;
 }
 
 .btn {
     display: inline-block;
-    background: #d4af37; /* Gold accent */
+    background: #ff8c00; /* Burger Orange */
     color: #fff;
-    padding: 12px 25px;
+    padding: 15px 35px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     border: none;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .btn:hover {
-    background: #c0a133;
-}
-
-.btn.view-full-menu {
-    margin-top: 30px;
+    background: #e07b00;
+    transform: translateY(-3px);
 }
 
 /* Sections Styling */
 section {
     padding: 80px 0;
     background-color: #fff;
-    margin-bottom: 20px;
 }
 
-section:nth-child(even) { /* Alternate background for sections */
+.about {
     background-color: #f9f9f9;
 }
 
@@ -180,21 +176,22 @@ section:nth-child(even) { /* Alternate background for sections */
     background: #fff;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
     text-align: left;
-    transition: transform 0.3s ease;
-    border-top: 5px solid #d4af37; /* Gold accent border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #222;
 }
 
 .menu-item:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item h4 {
-    color: #555;
+    color: #333;
     margin-bottom: 10px;
     font-size: 1.5em;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .menu-item p {
@@ -206,77 +203,40 @@ section:nth-child(even) { /* Alternate background for sections */
 
 .menu-item .price {
     font-weight: 700;
-    color: #d4af37; /* Gold accent */
-    font-size: 1.2em;
+    color: #ff8c00; /* Burger Orange */
+    font-size: 1.3em;
     float: right;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Contact Section */
 .contact {
     text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+.contact h3 {
+    color: #fff;
 }
 
 .contact p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-.reservation-form {
-    max-width: 600px;
-    margin: 40px auto 0 auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    text-align: left;
-}
-
-.reservation-form h4 {
-    text-align: center;
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 25px;
-}
-
-.reservation-form input[type="text"],
-.reservation-form input[type="email"],
-.reservation-form input[type="tel"],
-.reservation-form input[type="date"],
-.reservation-form input[type="time"],
-.reservation-form input[type="number"],
-.reservation-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-}
-
-.reservation-form textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-.reservation-form .btn {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    color: #ccc;
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: #111;
     color: #fff;
     text-align: center;
     padding: 30px 0;
-    margin-top: 20px;
 }
 
 footer p {
     margin: 0;
     font-size: 0.9em;
+    color: #aaa;
 }
 
 /* Responsive Design */
