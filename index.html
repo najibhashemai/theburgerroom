@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Burger Room | Beirut</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>The Burger Room | Tastiest Gourmet Burgers in Beirut, Lebanon</title>
+    <meta name="description" content="Discover the tastiest, most irresistible gourmet smash burgers in Beirut, Lebanon. The Burger Room in Beirut Souks offers premium burgers, handcrafted daily. It's smashin' good!">
+    <meta name="keywords" content="burger, lebanon, beirut, tastiest burger, best burger beirut, gourmet burger, smash burger, the burger room, beirut souks">
+    <meta name="author" content="The Burger Room">
+
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="The Burger Room | Tastiest Gourmet Burgers in Beirut, Lebanon" />
+    <meta property="og:description" content="Discover the tastiest, most irresistible gourmet smash burgers in Beirut, Lebanon. It's smashin' good!" />
+    <meta property="og:image" content="https://placehold.co/1200x630/92c849/ffffff?text=The+Burger+Room" />
+    <meta property="og:url" content="https://www.theburgerroomlb.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="https://placehold.co/32x32/92c849/ffffff?text=BR">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="container">
-                <h1 class="logo">The Burger Room</h1>
+                <a href="#hero" class="logo">The Burger Room</a>
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -24,74 +41,172 @@
         </nav>
         <div class="hero" id="hero">
             <div class="hero-content">
-                <h2>IN BUNS WE TRUST</h2>
-                <p>Gourmet burgers crafted with passion, served in the heart of Beirut.</p>
+                <h2>IT'S SMASHIN' GOOD</h2>
+                <p>Premium burgers, handcrafted daily. Welcome to your new favorite spot.</p>
                 <a href="#menu" class="btn">Explore The Menu</a>
             </div>
         </div>
     </header>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h3>BUILT FROM THE GROUND UP</h3>
-            <p>The Burger Room isn't just a restaurant; it's a commitment to the art of the burger. We source premium, fresh ingredients and craft every burger to order, ensuring a memorable experience with every single bite.</p>
-        </div>
-    </section>
+    <main>
+        <section id="menu" class="menu fade-in-section">
+            <div class="container">
+                <h3>THE MENU</h3>
 
-    <section id="menu" class="menu">
-        <div class="container">
-            <h3>OUR SIGNATURES</h3>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <h4>The OG Burger</h4>
-                    <p>The original masterpiece. Premium beef patty, melted cheddar, lettuce, tomato, and our secret OG sauce.</p>
-                    <span class="price">LBP 500,000</span>
+                <div class="menu-category">
+                    <h4>Burgers</h4>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Classic Single</h5>
+                                <p>MB2 patty, onions, lollo verde, cheddar, pickles, secret sauce.</p>
+                            </div>
+                            <span class="price">$8.49</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Classic Double</h5>
+                                <p>Double MB2 patty, onions, lollo verde, cheddar, pickles, secret sauce.</p>
+                            </div>
+                            <span class="price">$10.49</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Prime Single</h5>
+                                <p>MB4+ patty, onions, baby rocca, emmental, pickles, truffle mayo, secret sauce.</p>
+                            </div>
+                            <span class="price">$9.49</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Prime Double</h5>
+                                <p>Double MB4+ patty, onions, baby rocca, emmental, pickles, truffle mayo, secret sauce.</p>
+                            </div>
+                            <span class="price">$11.49</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Swissroom Single</h5>
+                                <p>MB4+ patty, onions, baby rocca, Swiss cheese, truffle mayo, shiitake mushroom sauce.</p>
+                            </div>
+                            <span class="price">$11.49</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Swissroom Double</h5>
+                                <p>Double MB4+ patty, baby rocca, Swiss cheese, truffle mayo, shiitake mushroom sauce.</p>
+                            </div>
+                            <span class="price">$13.49</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>O-Jam Single</h5>
+                                <p>MB4+ patty, onions, lollo verde, cheddar, pickles, and onion jam.</p>
+                            </div>
+                            <span class="price">$9.49</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>O-Jam Double</h5>
+                                <p>Double MB4+ patty, onions, lollo verde, cheddar, pickles, and onion jam.</p>
+                            </div>
+                            <span class="price">$11.49</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Trio</h5>
+                                <p>A mini version of the Classic, the Prime, and the O-Jam.</p>
+                            </div>
+                            <span class="price">$11.99</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu-item">
-                    <h4>The Truffle Burger</h4>
-                    <p>A luxurious blend of our prime patty, Swiss cheese, crispy onions, and an aromatic truffle aioli.</p>
-                    <span class="price">LBP 650,000</span>
+
+                <div class="menu-category">
+                    <h4>Appetizers & Fries</h4>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Cheezy Nuggets</h5>
+                                <p>5 pieces of cheese-jalapeño nuggets with aioli sauce.</p>
+                            </div>
+                            <span class="price">$5.99</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Onion Rings</h5>
+                                <p>5 pieces of onion rings with secret sauce.</p>
+                            </div>
+                            <span class="price">$4.99</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Fries</h5>
+                                <p>Imported fries, spices, and secret sauce.</p>
+                            </div>
+                            <span class="price">$4.49</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Fries n’ Cheese</h5>
+                                <p>Fries with spices, truffle mayo, mixed cheese, and parsley.</p>
+                            </div>
+                            <span class="price">$6.49</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Animal Fries</h5>
+                                <p>Fries with spices, MB2 beef, mixed cheese, and your choice of truffle or secret sauce.</p>
+                            </div>
+                            <span class="price">$8.49</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu-item">
-                    <h4>The BBQ Burger</h4>
-                    <p>Smoky BBQ sauce, crispy bacon, and melted cheddar come together for this timeless classic.</p>
-                    <span class="price">LBP 550,000</span>
-                </div>
-                 <div class="menu-item">
-                    <h4>The Chicken Burger</h4>
-                    <p>Crispy fried chicken breast, fresh slaw, and a tangy sauce. Perfectly crunchy and delicious.</p>
-                    <span class="price">LBP 480,000</span>
-                </div>
-                 <div class="menu-item">
-                    <h4>House Fries</h4>
-                    <p>Perfectly golden and crispy, seasoned with our signature spice blend. The ideal companion.</p>
-                    <span class="price">LBP 150,000</span>
-                </div>
-                 <div class="menu-item">
-                    <h4>Onion Rings</h4>
-                    <p>Thick-cut, beer-battered, and fried to perfection. Served with a side of our house dip.</p>
-                    <span class="price">LBP 200,000</span>
+
+                <div class="menu-category">
+                    <h4>Drinks</h4>
+                    <div class="menu-grid">
+                         <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Soft Drink</h5>
+                                <p>Pepsi, 7Up, Mirinda.</p>
+                            </div>
+                            <span class="price">$1.99</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Ice Tea</h5>
+                                <p>Peach, Tropical, Red Fruit.</p>
+                            </div>
+                            <span class="price">$1.99</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-details">
+                                <h5>Water</h5>
+                            </div>
+                            <span class="price">$0.99</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h3>FIND US</h3>
-            <p><strong>Location:</strong> Beirut Souks, Beirut, Lebanon</p>
-            <p><strong>Phone:</strong> +961 71 834 582</p>
-            <p><strong>Hours:</strong> Open Daily from 12:00 PM to 12:00 AM</p>
-            <a href="https://www.instagram.com/theburgerroomlb" class="btn social-btn" target="_blank">Follow us on Instagram</a>
-        </div>
-    </section>
+        <section id="contact" class="contact fade-in-section">
+            <div class="container">
+                <h3>VISIT THE ROOM</h3>
+                <p>Souk El Ghareb, Aley, Lebanon<br>Open Daily from 12:00 PM to 10:00 PM</p>
+                <a href="https://www.instagram.com/theburger.room" class="btn social-btn" target="_blank">Follow on Instagram</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 The Burger Room. Crafted with Passion.</p>
+            <p>&copy; 2025 The Burger Room. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
