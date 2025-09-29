@@ -87,7 +87,7 @@ p {
 /* Header & Navigation */
 header {
     /* HERO IMAGE */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://github.com/najibhashemai/theburgerroom/blob/main/cover-burger.jpg?raw=true') no-repeat center center/cover;
     min-height: 100vh;
     color: var(--light-text);
     display: flex;
